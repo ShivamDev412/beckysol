@@ -1,119 +1,71 @@
 "use client";
-import React from "react";
-import { motion, useAnimation } from "framer-motion";
-import { useInView } from "react-intersection-observer";
+import React, { useEffect, useState } from "react";
 import Image from "next/image";
 
 const HowToBuy = () => {
-  const textControls = useAnimation();
-  const imageControls = useAnimation();
-  const [textRef, textInView] = useInView({
-    triggerOnce: true, // Animation triggers only once when in view
-    threshold: 0.1, // Trigger when 10% of the text is visible
-  });
-  const [imageRef, imageInView] = useInView({
-    triggerOnce: true, // Animation triggers only once when in view
-    threshold: 0.1, // Trigger when 10% of the image is visible
-  });
+  const [, setIsSmallScreen] = useState(false);
 
-  // Animation for text sections (slide up with fade effect)
-  React.useEffect(() => {
-    if (textInView) {
-      textControls.start({ y: "0%", opacity: 1 });
-    } else {
-      textControls.start({ y: "100%", opacity: 0 });
-    }
-  }, [textControls, textInView]);
+  // Detect screen size on mount
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 768);
+    };
 
-  // Animation for the image (slide from top with fade effect)
-  React.useEffect(() => {
-    if (imageInView) {
-      imageControls.start({ y: "0%", opacity: 1 });
-    } else {
-      imageControls.start({ y: "-100%", opacity: 0 });
-    }
-  }, [imageControls, imageInView]);
+    handleResize(); // Check the screen size on initial load
+    window.addEventListener("resize", handleResize); // Update on window resize
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center overflow-hidden">
-      {/* Image Section */}
-      <motion.div
-        ref={imageRef} // Link the element with the IntersectionObserver
-        initial={{ y: "-100%", opacity: 0 }} // Start off-screen at the top and fade in
-        animate={imageControls} // Trigger animation based on `inView`
-        transition={{ type: "spring", stiffness: 50, damping: 10 }} // Customize the transition
-        className="w-full max-w-md"
-      >
+    <div className="min-h-screen flex flex-col md:flex-row justify-center items-center md:items-start space-y-6 md:space-x-10 md:space-y-0 overflow-hidden px-5 mt-10 xl:mt-0">
+      {/* How to Buy Text Section */}
+      <div className="w-full max-w-xl flex flex-col items-start space-y-6">
         <Image
           src="/images/how-to-buy.png"
-          alt="How to buy illustration"
-          width={600} // Adjust width
-          height={300} // Adjust height
+          alt="About title image"
+          width={600}
+          height={200}
           className="mx-auto"
         />
-      </motion.div>
 
-      {/* How to Buy Steps */}
-      <div className="flex flex-col space-y-8 w-[90%] mx-auto text-zinc-100">
-        {/* Step 1 */}
-        <motion.div
-          className="flex flex-col items-start"
-          ref={textRef}
-          initial={{ y: "100%", opacity: 0 }} // Start off-screen at the bottom and fade in
-          animate={textControls}
-          transition={{
-            type: "spring",
-            stiffness: 50,
-            damping: 10,
-            delay: 0.2,
-          }}
-        >
-          <h2 className="text-3xl font-bold">Create a Wallet</h2>
-          <p className="mt-2 text-lg">
-            Download Metamask or your wallet of choice from the app store or Google Play Store for free. 
-            Desktop users, download the Google Chrome extension by going to metamask.io.
+        <div>
+          <h3 className="text-3xl font-bold text-white">Create a Wallet</h3>
+          <p className="mt-2 text-xl text-white">
+            Download Phantom Wallet or your wallet of choice from the app store
+            or Google Play Store for free. Desktop users, download the Google
+            Chrome extension for Phantom Wallet.
           </p>
-        </motion.div>
+        </div>
+        <div>
+          <h3 className="text-3xl font-bold text-white">Get some SOL</h3>
+          <p className="mt-2 text-xl text-white">
+            Have SOL or USDT in your wallet to switch to $BECKY. If you don’t
+            have any SOL, you can buy directly on Metamask, transfer from
+            another wallet, or buy on another exchange and send it to your
+            wallet.
+          </p>
+        </div>
+        <div>
+          <h3 className="text-3xl font-bold text-white">Buy $BECKY</h3>
+          <p className="mt-2 text-xl text-white">
+            Connect your wallet. Navigate to the top of this page and connect
+            your preferred wallet using the presale widget. Input the amount of
+            tokens you want to exchange for $BECKY and confirm the transaction
+            through your wallet.
+          </p>
+        </div>
+      </div>
 
-        {/* Step 2 */}
-        <motion.div
-          className="flex flex-col items-start"
-          ref={textRef}
-          initial={{ y: "100%", opacity: 0 }} // Start off-screen at the bottom and fade in
-          animate={textControls}
-          transition={{
-            type: "spring",
-            stiffness: 50,
-            damping: 10,
-            delay: 0.4,
-          }}
-        >
-          <h2 className="text-3xl font-bold">Get some $ETH</h2>
-          <p className="mt-2 text-lg">
-            Have ETH or USDT in your wallet to switch to $PORK. If you don’t have any ETH, you can buy directly 
-            on Metamask, transfer from another wallet, or buy on another exchange and send it to your wallet.
-          </p>
-        </motion.div>
-
-        {/* Step 3 */}
-        <motion.div
-          className="flex flex-col items-start"
-          ref={textRef}
-          initial={{ y: "100%", opacity: 0 }} // Start off-screen at the bottom and fade in
-          animate={textControls}
-          transition={{
-            type: "spring",
-            stiffness: 50,
-            damping: 10,
-            delay: 0.6,
-          }}
-        >
-          <h2 className="text-3xl font-bold">Buy $PORK</h2>
-          <p className="mt-2 text-lg">
-            Connect your wallet. Navigate to the top of this page and connect your preferred wallet using the presale widget. 
-            Input the amount of tokens you want to exchange for $PORK and confirm the transaction through your wallet.
-          </p>
-        </motion.div>
+      {/* How to Buy Image Section */}
+      <div className="w-full xl:w-[35%] mx-auto">
+        <Image
+          src="/images/about-girl.jpeg" // Replace with your image
+          alt="How to buy girl"
+          width={1500}
+          height={1500}
+          className="mx-auto"
+        />
       </div>
     </div>
   );
