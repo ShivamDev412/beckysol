@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #E3B1E8;
+  --foreground: #93579d;
+  --font-sofadi-one: 'Sofadi One', sans-serif;
+}
+.sofadione {
+  font-family: var(--font-sofadi_one);
+}
+body {
+  color: var(--foreground);
+  background: var(--background);
+  /* font-family: 'Sofadi One !important'; */
+}
+html {
+  scroll-behavior: smooth;
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
