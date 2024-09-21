@@ -92,6 +92,7 @@ const About = () => {
               WebkitTextStroke: "0.3px #333",
               WebkitTextFillColor: "white",
             }}>
+            {/* eslint-disable-next-line react/no-unescaped-entities */}
             $BECKY is here to rule the meme world with her insane comics that are currently in development, featuring even more degeneration than you’ve seen from any of her Boy’s Club homies. So pack a bag and get ready for a whirlwind of BECKY's escapades, animated by her genius team!
           </p>
         </motion.div>
