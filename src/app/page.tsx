@@ -6,6 +6,7 @@ import Header from "@/components/Header";
 import HowToBuy from "@/components/HowToBuy";
 import PreHowToBuy from "@/components/PreHowToBuy";
 import Roadmap from "@/components/Roadmap";
+import SocialLinks from "@/components/SocialLinks";
 // import RoadmapGirl from "@/components/RoadmapGirl";
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
       <section id="about">
         <About />
       </section>
+      <SocialLinks />
       <section id="roadmap">
         <Roadmap />
       </section>
