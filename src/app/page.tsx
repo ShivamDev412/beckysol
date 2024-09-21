@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Banner from "@/components/Banner";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import HowToBuy from "@/components/HowToBuy";
 import PreHowToBuy from "@/components/PreHowToBuy";
@@ -25,7 +26,7 @@ export default function Home() {
       <section id="roadmap">
         <Roadmap />
       </section>
-      <h2>ddd</h2>
+      <Footer />
     </div>
   );
 }
