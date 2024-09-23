@@ -5,15 +5,17 @@
 :root {
   --background: #E3B1E8;
   --foreground: #93579d;
-  --font-sofadi-one: 'Sofadi One', sans-serif;
 }
-.sofadione {
-  font-family: var(--font-sofadi_one);
+@font-face {
+  font-family: 'GentyDemo';
+  src: url('/fonts/GentyDemo-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 body {
   color: var(--foreground);
   background: var(--background);
-  /* font-family: 'Sofadi One !important'; */
+  font-family: 'GentyDemo', sans-serif;
 }
 html {
   scroll-behavior: smooth;

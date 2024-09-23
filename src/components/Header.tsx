@@ -100,9 +100,14 @@ const Header = () => {
           </nav>
 
           {/* "Buy Now" Button inside the dropdown */}
-          <button className="mt-10 px-8 py-4 bg-foreground text-white font-extrabold text-xl rounded-lg border-2 border-black shadow-[5px_5px_0px_0px_#ffffff] hover:shadow-[8px_8px_0px_0px_#ffffff] transition-all duration-300 ease-in-out">
+          <a
+            href="https://pump.fun/6aNtorm2HyyxCGuqREXm8BGXnFy9Th5BLmcLENKvpump"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-10 px-8 py-4 bg-foreground text-white font-extrabold text-xl rounded-lg border-2 border-black shadow-[5px_5px_0px_0px_#ffffff] hover:shadow-[8px_8px_0px_0px_#ffffff] transition-all duration-300 ease-in-out"
+          >
             Buy Now
-          </button>
+          </a>
         </motion.div>
       )}
 
@@ -137,9 +142,14 @@ const Header = () => {
       </nav>
 
       {/* "Buy Now" Button for larger screens */}
-      <button className="hidden md:block px-8 py-4 bg-foreground text-white font-extrabold text-xl rounded-lg border-2 border-black shadow-[5px_5px_0px_0px_#ffffff] hover:shadow-[8px_8px_0px_0px_#ffffff] transition-all duration-300 ease-in-out">
+      <a
+        href="https://pump.fun/6aNtorm2HyyxCGuqREXm8BGXnFy9Th5BLmcLENKvpump"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hidden md:block px-8 py-4 bg-foreground text-white font-extrabold text-xl rounded-lg border-2 border-black shadow-[5px_5px_0px_0px_#ffffff] hover:shadow-[8px_8px_0px_0px_#ffffff] transition-all duration-300 ease-in-out"
+      >
         Buy Now
-      </button>
+      </a>
     </header>
   );
 };
