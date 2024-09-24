@@ -108,35 +108,39 @@ const Roadmap = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-[90%] mx-auto text-zinc-100">
         {/* Step 1 */}
         <div
-          className={`${
-            isSmallScreen ? "opacity-100" : "motion-div"
-          } flex flex-col items-left space-y-4`}
-          ref={step1Ref}
-        >
-          <Image
-            src="/images/step-1.png"
-            alt="Step 1"
-            width={300}
-            height={200}
-          />
-          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-            The Big Bang
-          </h2>
-          <ul className="list-none text-xl md:text-2xl flex flex-col items-left">
-            <li className="flex items-left">
-              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-              Website Goes Live
-            </li>
-            <li className="flex items-left">
-              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-              Pump-fun Launch & Live Art Creation
-            </li>
-            <li className="flex items-left">
-              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-              Social Channels are Born
-            </li>
-          </ul>
-        </div>
+  className={`${
+    isSmallScreen ? "opacity-100" : "motion-div"
+  } flex flex-col items-center xl:items-left space-y-4`}
+  ref={step1Ref}
+>
+  <Image
+    src="/images/step-1.png"
+    alt="Step 1"
+    width={300}
+    height={200}
+  />
+  <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+    The Big Bang
+  </h2>
+  <ul className="list-none text-xl md:text-2xl">
+    <li className="flex items-center">
+      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+      Website Goes Live
+    </li>
+    <li className="flex items-center">
+      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+      Pump-fun Launch 
+    </li>
+    <li className="flex items-center">
+      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+      Live Art Creation
+    </li>
+    <li className="flex items-center">
+      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+      Social Channels are Born
+    </li>
+  </ul>
+</div>
 
         {/* Step 2 */}
         <div
