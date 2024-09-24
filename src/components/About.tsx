@@ -53,7 +53,7 @@ const About = () => {
   }, [descriptionControls, descInView, isSmallScreen]);
 
   return (
-    <div className="xl:min-h-screen flex flex-col md:flex-row justify-center items-center md:items-end space-y-5 md:space-x-10 md:space-y-0 xl:overflow-hidden mt-[3.5in] xl:mt-0">
+    <div className="flex flex-col md:flex-row justify-center items-center md:items-end space-y-5 md:space-x-10 md:space-y-0 xl:overflow-hidden mt-[3.5in] xl:mt-0">
       {/* About Section (on top for small screens) */}
       <div className="w-full max-w-xl flex flex-col space-y-6 mt-[-3in]">
         {/* About Title Image */}

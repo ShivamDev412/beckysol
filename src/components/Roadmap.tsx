@@ -87,7 +87,7 @@ const Roadmap = () => {
   ]);
 
   return (
-    <div className="min-h-screen flex flex-col justify-center items-center  overflow-hidden">
+    <div className="flex flex-col justify-center items-center  overflow-hidden">
       {/* Centered Roadmap Image */}
       <div
         ref={imageRef}

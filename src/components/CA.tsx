@@ -18,7 +18,7 @@ const CA = () => {
       </h2>
       <button
         onClick={copyToClipboard}
-        className="mt-5 bg-white text-foreground py-2 px-4 rounded w-fit font-semibold"
+        className="mt-5 bg-white text-foreground py-2 px-4 rounded w-fit font-semibold text-xl"
       >
         Copy to Clipboard
       </button>

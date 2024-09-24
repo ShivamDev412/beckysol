@@ -18,9 +18,9 @@ const HowToBuy = () => {
   }, []);
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row justify-center items-center md:items-end space-y-6 md:space-x-10 md:space-y-0 overflow-hidden px-5 mt-10 xl:mt-0">
+    <div className="flex flex-col md:flex-row justify-center items-center md:items-end md:space-x-10 md:space-y-0 overflow-hidden px-5 mt-10 xl:mt-0">
       {/* How to Buy Text Section */}
-      <div className="w-full max-w-xl flex flex-col items-start space-y-6 xl:mb-10">
+      <div className="w-full max-w-xl flex flex-col items-start xl:mb-10">
         <Image
           src="/images/how-to-buy.webp"
           alt="How To Buy title image"

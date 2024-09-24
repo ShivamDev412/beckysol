@@ -17,7 +17,8 @@ export default function Home() {
       </section>
 
       <Banner /> 
-       <CA /> 
+      <div className="flex flex-col gap-[0.2in] xl:gap-[1in]">
+      <CA /> 
        <section id="about">
         <About />
       </section>
@@ -25,14 +26,17 @@ export default function Home() {
       <section id="roadmap">
         <Roadmap />
       </section>
+
       <section id="how-to-buy">
         <HowToBuy />
       </section>
-
+      </div>
       <section id="pre-how-to-buy">
         <PreHowToBuy />
       </section>
       <Footer /> 
+      
+
     </div>
   );
 }
