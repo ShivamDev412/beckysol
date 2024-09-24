@@ -99,7 +99,7 @@ const About = () => {
         } w-full xl:w-[35%] mx-auto`}
       >
         <Image
-          src="/images/about-g.png"
+          src="/images/about-girl.jpeg"
           alt="About girl"
           width={1500}
           height={1500}
