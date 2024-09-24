@@ -157,7 +157,7 @@ const Roadmap = () => {
           <ul className="list-none text-xl md:text-2xl">
             <li className="flex items-center">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-              Contract Audit
+              500 Holders
             </li>
             <li className="flex items-center">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}

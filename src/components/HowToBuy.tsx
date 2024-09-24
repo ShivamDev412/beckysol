@@ -41,18 +41,15 @@ const HowToBuy = () => {
           <h3 className="text-3xl font-bold text-white">Get some SOL</h3>
           <p className="mt-2 text-xl text-white">
             Have SOL or USDT in your wallet to switch to $BECKY. If you don’t
-            have any SOL, you can buy directly on Metamask, transfer from
-            another wallet, or buy on another exchange and send it to your
-            wallet.
+            have any SOL, you can buy directly on Phantom, transfer from another
+            wallet, or buy on another exchange and send it to your wallet.
           </p>
         </div>
         <div>
           <h3 className="text-3xl font-bold text-white">Buy $BECKY</h3>
           <p className="mt-2 text-xl text-white">
-            Connect your wallet. Navigate to the top of this page and connect
-            your preferred wallet using the presale widget. Input the amount of
-            tokens you want to exchange for $BECKY and confirm the transaction
-            through your wallet.
+            Connect your wallet to Pumpfun or add the $BECKY address in the
+            token bar and swap some SOL for Becky! Its that simple!
           </p>
         </div>
       </div>
