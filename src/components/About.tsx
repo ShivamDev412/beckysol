@@ -64,7 +64,7 @@ const About = () => {
           } mx-auto w-[80%] sm:w-[90%] md:w-[75%] lg:w-[60%] xl:w-[50%] max-w-md mt-4 lg:mt-0`}
         >
           <Image
-            src="/images/about.png"
+            src="/images/about.webp"
             alt="About title image"
             width={600}
             height={200}
@@ -99,7 +99,7 @@ const About = () => {
         } w-full xl:w-[35%] mx-auto`}
       >
         <Image
-          src="/images/about-girl.jpeg"
+          src="/images/about-girl.webp"
           alt="About girl"
           width={1500}
           height={1500}

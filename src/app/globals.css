@@ -6,20 +6,36 @@
   --background: #E3B1E8;
   --foreground: #93579d;
 }
+
 @font-face {
   font-family: 'GentyDemo';
-  src: url('/fonts/GentyDemo-Regular.otf');
+  src: url('/fonts/GentyDemo-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'LondrinaSolid-Regular';
+  src: url('/fonts/LondrinaSolid-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: 'GentyDemo', sans-serif; 
+  font-family: 'GentyDemo', sans-serif; /* Default font */
 }
+
 html {
   scroll-behavior: smooth;
 }
+
+/* Apply custom font as needed */
+.londrina-font {
+  font-family: 'LondrinaSolid-Regular', sans-serif;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

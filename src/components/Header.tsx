@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className="fixed top-0 left-0 w-full z-50 flex justify-between items-center transition-all duration-300 bg-[#93579d]/50 backdrop-blur-lg backdrop-brightness-125 py-2 px-10">
       <Image
-        src="/images/logo.png"
+        src="/images/becky-logo.webp"
         alt="becky_logo"
         width={150}
         height={150}
@@ -55,7 +55,7 @@ const Header = () => {
             &times;
           </button>
           <Image
-            src="/images/logo.png"
+            src="/images/becky-logo.webp"
             alt="becky_logo"
             width={150}
             height={150}
@@ -63,31 +63,10 @@ const Header = () => {
             onClick={() => scrollToSection("home")}
           />
           <nav className="w-full text-center">
-            <ul className="space-y-8 flex flex-col items-center">
-              <li onClick={() => scrollToSection("about")}>
-                <Image
-                  src={"/images/about-nav.png"}
-                  alt={"about-nav-image"}
-                  height={150}
-                  width={150}
-                />
-              </li>
-              <li onClick={() => scrollToSection("how-to-buy")}>
-                <Image
-                  src={"/images/how-to-buy-nav.png"}
-                  alt={"how-to-buy-nav-image"}
-                  height={150}
-                  width={150}
-                />
-              </li>
-              <li onClick={() => scrollToSection("roadmap")}>
-                <Image
-                  src={"/images/roadmap-nav.png"}
-                  alt={"roadmap-nav-image"}
-                  height={150}
-                  width={150}
-                />
-              </li>
+            <ul className="space-y-8 flex flex-col items-center londrina-font text-4xl">
+              <li onClick={() => scrollToSection("about")}>About</li>
+              <li onClick={() => scrollToSection("how-to-buy")}>How to Buy?</li>
+              <li onClick={() => scrollToSection("roadmap")}>Roadmap</li>
               {/* <li
                 className="underline hover:cursor-pointer underline-offset-[5.5px] font-[Sofadi One]"
                 onClick={() => scrollToSection("tokenomics")}
@@ -107,45 +86,10 @@ const Header = () => {
         </motion.div>
       )}
       <nav className="hidden md:flex flex-1 justify-center">
-        <ul className="flex items-center gap-10 text-3xl font-bold text-white">
-          <li
-            
-            onClick={() => scrollToSection("about")}
-          >
-            <Image
-              src={"/images/about-nav.png"}
-              alt={"about-nav-image"}
-              height={150}
-              width={150}
-            />
-          </li>
-          <li
-           
-            onClick={() => scrollToSection("how-to-buy")}
-          >
-            <Image
-              src={"/images/how-to-buy-nav.png"}
-              alt={"how-to-buy-nav-image"}
-              height={150}
-              width={150}
-            />
-          </li>
-          <li
-            onClick={() => scrollToSection("roadmap")}
-          >
-            <Image
-              src={"/images/roadmap-nav.png"}
-              alt={"roadmap-nav-image"}
-              height={150}
-              width={150}
-            />
-          </li>
-          {/* <li
-            className="underline hover:cursor-pointer underline-offset-[5.5px] font-[Sofadi One]"
-            onClick={() => scrollToSection("tokenomics")}
-          >
-            Tokenomics
-          </li> */}
+        <ul className="flex items-center gap-10 text-3xl font-bold text-white londrina-font">
+          <li onClick={() => scrollToSection("about")}>About</li>
+          <li onClick={() => scrollToSection("how-to-buy")}>How to Buy?</li>
+          <li onClick={() => scrollToSection("roadmap")}>Roadmap</li>
         </ul>
       </nav>
       <a

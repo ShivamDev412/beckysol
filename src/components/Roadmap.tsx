@@ -1,6 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import {useAnimation } from "framer-motion";
+import { useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 
@@ -96,7 +96,7 @@ const Roadmap = () => {
         } w-full max-w-md`}
       >
         <Image
-          src="/images/roadmap.png"
+          src="/images/roadmap.webp"
           alt="Roadmap Title Image"
           width={600}
           height={200}
@@ -108,39 +108,39 @@ const Roadmap = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 w-[90%] mx-auto text-zinc-100">
         {/* Step 1 */}
         <div
-  className={`${
-    isSmallScreen ? "opacity-100" : "motion-div"
-  } flex flex-col items-center xl:items-left space-y-4`}
-  ref={step1Ref}
->
-  <Image
-    src="/images/step-1.png"
-    alt="Step 1"
-    width={300}
-    height={200}
-  />
-  <h2 className="text-3xl md:text-4xl font-extrabold text-white">
-    The Big Bang
-  </h2>
-  <ul className="list-none text-xl md:text-2xl">
-    <li className="flex items-center">
-      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-      Website Goes Live
-    </li>
-    <li className="flex items-center">
-      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-      Pump-fun Launch 
-    </li>
-    <li className="flex items-center">
-      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-      Live Art Creation
-    </li>
-    <li className="flex items-center">
-      <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-      Social Channels are Born
-    </li>
-  </ul>
-</div>
+          className={`${
+            isSmallScreen ? "opacity-100" : "motion-div"
+          } flex flex-col items-center xl:items-left space-y-4`}
+          ref={step1Ref}
+        >
+          <Image
+            src="/images/step-1.webp"
+            alt="Step 1"
+            width={300}
+            height={200}
+          />
+          <h2 className="text-3xl md:text-4xl font-extrabold text-white">
+            The Big Bang
+          </h2>
+          <ul className="list-none text-xl md:text-2xl">
+            <li className="flex items-center">
+              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+              Website Goes Live
+            </li>
+            <li className="flex items-center">
+              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+              Pump-fun Launch
+            </li>
+            <li className="flex items-center">
+              <span className="w-4 h-4 bg-white rounded-full mr-2"></span> Live
+              Art Creation
+            </li>
+            <li className="flex items-center">
+              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
+              Social Channels are Born
+            </li>
+          </ul>
+        </div>
 
         {/* Step 2 */}
         <div
@@ -150,7 +150,7 @@ const Roadmap = () => {
           ref={step2Ref}
         >
           <Image
-            src="/images/step-2.png"
+            src="/images/step-2.webp"
             alt="Step 2"
             width={300}
             height={200}
@@ -160,8 +160,8 @@ const Roadmap = () => {
           </h2>
           <ul className="list-none text-xl md:text-2xl">
             <li className="flex items-center">
-              <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
-              500 Holders
+              <span className="w-4 h-4 bg-white rounded-full mr-2"></span> 500
+              Holders
             </li>
             <li className="flex items-center">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
@@ -182,7 +182,7 @@ const Roadmap = () => {
           ref={step3Ref}
         >
           <Image
-            src="/images/step-3.png"
+            src="/images/step-3.webp"
             alt="Step 3"
             width={300}
             height={200}
@@ -214,7 +214,7 @@ const Roadmap = () => {
           ref={step4Ref}
         >
           <Image
-            src="/images/step-4.png"
+            src="/images/step-4.webp"
             alt="Step 4"
             width={300}
             height={200}
