@@ -13,7 +13,7 @@ const CA = () => {
 
   return (
     <div className="bg-foreground py-10 w-[90%] mx-auto mt-10 flex justify-center flex-col items-center rounded-lg p-4">
-      <h2 className="text-white text-center text-2xl xl:text-4xl font-semibold uppercase break-all">
+      <h2 className="text-white text-center text-2xl xl:text-4xl font-semibold uppercase break-all font-sans">
         CA: 6aNtorm2HyyxCGuqREXm8BGXnFy9Th5BLmcLENKvpump
       </h2>
       <button
