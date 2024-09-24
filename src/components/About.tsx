@@ -103,6 +103,7 @@ const About = () => {
           alt="About girl"
           width={1500}
           height={1500}
+          priority
           className="mx-auto"
         />
       </div>

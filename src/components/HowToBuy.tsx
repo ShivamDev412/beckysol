@@ -61,6 +61,7 @@ const HowToBuy = () => {
           alt="How to buy girl"
           width={1500}
           height={1500}
+          priority
           className="mx-auto"
         />
       </div>
