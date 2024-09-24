@@ -80,18 +80,13 @@ const About = () => {
           } text-left text-white px-5`}
         >
           <p className="text-xl xl:text-3xl font-bold">
-            $BECKY is the newest baddie from the MATT FURIE collection. She’s a
-            naughty playboy model who hangs out on the Solana Chain and is ready
-            to handle any big green candle.
-          </p>
-
-          <p className="mt-8 text-xl xl:text-3xl font-bold">
-            $BECKY is here to rule the meme world with her insane comics that
-            are currently in development, featuring even more degeneration than
-            you’ve seen from any of her Boy’s Club homies. So pack a bag and get
-            {/* eslint-disable-next-line react/no-unescaped-entities */}
-            ready for a whirlwind of BECKY's escapades, animated by her genius
-            team!
+            $BECKY is the newest baddie on SOL. She’s a naughty playboy model
+            who hangs out on the Solana Chain and is ready to handle any big
+            green candle. $BECKY is here to take over the meme world with her
+            insane team of developers, artists and degens! Her spicy comics are
+            currently in development, featuring more degeneration than ever
+            before! Stay tuned and pack your bags because it’s going to get hot
+            up in here
           </p>
         </div>
       </div>
