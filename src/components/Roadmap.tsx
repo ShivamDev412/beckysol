@@ -110,7 +110,7 @@ const Roadmap = () => {
         <div
           className={`${
             isSmallScreen ? "opacity-100" : "motion-div"
-          } flex flex-col items-center xl:items-left space-y-4`}
+          } flex flex-col items-left space-y-4`}
           ref={step1Ref}
         >
           <Image
@@ -122,16 +122,16 @@ const Roadmap = () => {
           <h2 className="text-3xl md:text-4xl font-extrabold text-white">
             The Big Bang
           </h2>
-          <ul className="list-none text-xl md:text-2xl flex flex-col items-center">
-            <li className="flex items-center">
+          <ul className="list-none text-xl md:text-2xl flex flex-col items-left">
+            <li className="flex items-left">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
               Website Goes Live
             </li>
-            <li className="flex items-center">
+            <li className="flex items-left">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
               Pump-fun Launch & Live Art Creation
             </li>
-            <li className="flex items-center">
+            <li className="flex items-left">
               <span className="w-4 h-4 bg-white rounded-full mr-2"></span>{" "}
               Social Channels are Born
             </li>
