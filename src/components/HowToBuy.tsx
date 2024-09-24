@@ -22,7 +22,7 @@ const HowToBuy = () => {
       {/* How to Buy Text Section */}
       <div className="w-full max-w-xl flex flex-col items-start space-y-6 xl:mb-10">
         <Image
-          src="/images/how-to-buy.png"
+          src="/images/how-to-buy-title.png"
           alt="About title image"
           width={600}
           height={200}
